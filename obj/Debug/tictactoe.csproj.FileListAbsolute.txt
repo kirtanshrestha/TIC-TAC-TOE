@@ -5,3 +5,10 @@ C:\Users\Kirtan\source\repos\tictactoe\obj\Debug\tictactoe.csproj.AssemblyRefere
 C:\Users\Kirtan\source\repos\tictactoe\obj\Debug\tictactoe.csproj.CoreCompileInputs.cache
 C:\Users\Kirtan\source\repos\tictactoe\obj\Debug\tictactoe.exe
 C:\Users\Kirtan\source\repos\tictactoe\obj\Debug\tictactoe.pdb
+C:\Users\Kirtan\Documents\GitHub\TIC-TAC-TOE\bin\Debug\tictactoe.exe.config
+C:\Users\Kirtan\Documents\GitHub\TIC-TAC-TOE\bin\Debug\tictactoe.exe
+C:\Users\Kirtan\Documents\GitHub\TIC-TAC-TOE\bin\Debug\tictactoe.pdb
+C:\Users\Kirtan\Documents\GitHub\TIC-TAC-TOE\obj\Debug\tictactoe.csproj.AssemblyReference.cache
+C:\Users\Kirtan\Documents\GitHub\TIC-TAC-TOE\obj\Debug\tictactoe.csproj.CoreCompileInputs.cache
+C:\Users\Kirtan\Documents\GitHub\TIC-TAC-TOE\obj\Debug\tictactoe.exe
+C:\Users\Kirtan\Documents\GitHub\TIC-TAC-TOE\obj\Debug\tictactoe.pdb
