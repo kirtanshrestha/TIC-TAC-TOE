@@ -13,30 +13,51 @@ namespace Tictactoe
         static void Main(string[] args)
         {
             Console.WriteLine("Enter player 1 name: ");
-            string u1 = Console.ReadLine();
+            string p1 = Console.ReadLine();
 
             Console.WriteLine("Enter player 2 name: ");
-            string u2 = Console.ReadLine();
+            string p2 = Console.ReadLine();
 
             int win;
             string winner;
+            int p1c = 0;
+            int p2c = 0;
+
+
+            string cont;
 
             while (true)
             {
-                win = startGame(u1, u2);
-                if(win == -1)
+                win = startGame(p1, p2);
+                if (win == -1)
+                {
                     Console.WriteLine("match drawn!");
+                    p1c++;
+                    p2c++;
+                }
                 else
                 {
-                    winner = (win == 0) ? u2 : u1;
-                    Console.WriteLine($"Player {winner} won! ");
+          
+                    winner = (win == 0) ? p2 : p1;
+                    (win == 0 ? ref p2c : ref p1c)++;
+
+                    Console.WriteLine($"{winner} won! ");
                 }
+
+                System.Console.WriteLine("Game Over!");
+                System.Console.WriteLine("------------------------------------------");
+                System.Console.WriteLine($"STATS: {p1} : {p1c} | {p2} : {p2c}");
+                System.Console.Write("Enter 1 to stop. Anything else to continue: ");
+                cont = Console.ReadLine();
+             
+                if (cont.Equals("1"))
+                    break;
             }
         }
 
-        static int startGame(string u1, string u2)
+        static int startGame(string p1, string p2)
         {
-          
+
             int[,] board = new int[3, 3]
             {
                 { -1, -1, -1 },
@@ -44,15 +65,15 @@ namespace Tictactoe
                 { -1, -1, -1 }
             };
             String[] players = new string[2];
-            players[1] = u1+" (X)";
-            players[0] = u2+" (O)";
+            players[1] = p1 + " (X)";
+            players[0] = p2 + " (O)";
 
-           
+
 
             int win = -1;
 
             int count = 0;
-            for (int i = 1; (win == -1 && count<8) ; i++, count++)
+            for (int i = 1; (win == -1 && count < 9); i++, count++)
             {
                 drawBoard(board);
 
@@ -62,13 +83,11 @@ namespace Tictactoe
 
                 int c = Convert.ToInt16(Console.ReadLine());
                 inputs(board, i, c);
-
-                win = winCheck(board);
-
-
+                if (count > 3)
+                    win = winCheck(board);
             }
 
-            if (count == 8)
+            if (count == 9)
                 return -1;
 
             return win;//for draw
@@ -140,7 +159,7 @@ namespace Tictactoe
         }
 
 
-    
+
 
         static void drawBoard(int[,] brd)
         {
