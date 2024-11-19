@@ -18,7 +18,7 @@ Getting Started
 
 1.  Clone the repository:
 
-    git clone https://github.com/your-kirtanshrestha/tic-tac-toe.git
+    git clone https://github.com/your-kirtanshrestha/tic-tac-toe
 
 3.  Open the project in your preferred C# IDE.
 4.  Build and run the project.
