@@ -1,4 +1,4 @@
-Tic Tac Toe Console Game
+  Tic Tac Toe Console Game
 
 Tic Tac Toe Console Game
 ========================
@@ -13,15 +13,30 @@ Features
 *   Win detection and draw handling
 *   Input validation for a smooth experience
 
+Game Screenshots
+----------------
+
+### Player X Wins
+
+![Player X Wins](assets/win1.png)
+
+### Player O Wins
+
+![Player O Wins](assets/win2.png)
+
+### Match Drawn
+
+![Match Drawn](assets/draw.png)
+
 Getting Started
 ---------------
 
 1.  Clone the repository:
-
-    git clone https://github.com/kirtanshrestha/tic-tac-toe
-
-3.  Open the project in your preferred C# IDE.
-4.  Build and run the project.
+    ```bash
+        git clone https://github.com/kirtanshrestha/tic-tac-toe.git
+    ```
+2.  Open the project in your preferred C# IDE.
+3.  Build and run the project.
 
 Technologies Used
 -----------------
@@ -36,7 +51,6 @@ Future Enhancements
 *   Implement a graphical interface
 *   Include sound effects for a better experience
 
-License
--------
-
-Feel free to use and modify this project as you like.
+---
+### License
+This project is licensed under the MIT License. See the [`LICENSE`](LICENSE) file for more details.
