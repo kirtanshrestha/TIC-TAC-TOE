@@ -18,11 +18,11 @@ Game Screenshots
 
 ### Player X Wins
 
-![Player X Wins](assets/win1.png)
+![Player X Wins](assets/win2.png)
 
 ### Player O Wins
 
-![Player O Wins](assets/win2.png)
+![Player O Wins](assets/win1.png)
 
 ### Match Drawn
 
